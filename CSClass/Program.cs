@@ -39,7 +39,18 @@ namespace CSClass
             Console.WriteLine(Math.Min(21, 9));
             Console.WriteLine(Math.PI);
 
-            Product product = new Product();
+            //Product product = new Product();
+            //product.name = "블루베리";
+            //product.price = 8000;
+            Product product1 = new Product() { name = "블루베리", price = 8000 };
+            Product product2 = new Product() { name = "한라봉", price = 4000 };
+            Product product3 = new Product() { name = "메론", price = 6000 };
+
+
+            // Console.WriteLine(product.name + " : " + product.price);
+            Console.WriteLine(product1);
+            Console.WriteLine(product2);
+            Console.WriteLine(product3);
         }
     }
 }
