@@ -38,6 +38,8 @@ namespace CSClass
             Console.WriteLine(Math.Max(2, 19));
             Console.WriteLine(Math.Min(21, 9));
             Console.WriteLine(Math.PI);
+
+            Product product = new Product();
         }
     }
 }
