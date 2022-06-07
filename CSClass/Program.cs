@@ -115,6 +115,9 @@ namespace CSClass
                 // Console.WriteLine(item.name + " : " + item.grade);
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-52));
         }
     }
 }
