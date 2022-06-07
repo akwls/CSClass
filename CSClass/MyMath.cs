@@ -25,5 +25,6 @@ namespace CSClass
         {
             Console.WriteLine("클래스 메서드에서 접근 불가");
         }
+
     }
 }
