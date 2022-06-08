@@ -138,11 +138,17 @@ namespace CSClass
             Console.WriteLine(Sample.value);
             Console.WriteLine("세 번째 위치");
 
+
             // Console.WriteLine("첫번째 위치");
             // Console.WriteLine(Sample.value); // 이 때, 한번만 정적 생성자 호출됨.
             // Console.WriteLine("두 번째 위치");
             // Sample sample = new Sample();
             // Console.WriteLine("세 번째 위치");
+
+            Console.WriteLine();
+
+            // 소멸자는 LIFO 구조.
+            // 마지막에 생성된 객체가 가장 먼저 소멸된다.
 
         }
     }
