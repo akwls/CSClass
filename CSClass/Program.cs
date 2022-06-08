@@ -131,6 +131,19 @@ namespace CSClass
 
             SingleTon singleTon = SingleTon.getInstance();
 
+            // 정적 생성자는 해당 클래스와 관련된 요소를 처음 사용하는 시점에 한번만 호출된다.
+            Console.WriteLine("첫번째 위치");
+            Sample sample = new Sample(); // 이 때, 한번만 정적 생성자 호출됨.
+            Console.WriteLine("두 번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("세 번째 위치");
+
+            // Console.WriteLine("첫번째 위치");
+            // Console.WriteLine(Sample.value); // 이 때, 한번만 정적 생성자 호출됨.
+            // Console.WriteLine("두 번째 위치");
+            // Sample sample = new Sample();
+            // Console.WriteLine("세 번째 위치");
+
         }
     }
 }
