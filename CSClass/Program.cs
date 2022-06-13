@@ -150,6 +150,17 @@ namespace CSClass
             // 소멸자는 LIFO 구조.
             // 마지막에 생성된 객체가 가장 먼저 소멸된다.
 
+
+            Box box = new Box(10, 20);
+            box.Width = 200;
+            box.Height = 100;
+            Console.WriteLine(box.Area);
+
+            box.Height = -10;
+            Console.WriteLine(box.Area);
+
+            Box box2 = new Box(-10, -20);
+            Console.WriteLine(box2.Area);
         }
     }
 }
