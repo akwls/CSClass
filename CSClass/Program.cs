@@ -161,6 +161,13 @@ namespace CSClass
 
             Box box2 = new Box(-10, -20);
             Console.WriteLine(box2.Area);
+            Console.WriteLine();
+
+            Console.WriteLine(Fibbonacci.Get(1));
+            Console.WriteLine(Fibbonacci.Get(10));
+            Console.WriteLine(Fibbonacci.Get(50));
+            Console.WriteLine(Fibbonacci.Get(100));
+            Console.WriteLine();
         }
     }
 }
