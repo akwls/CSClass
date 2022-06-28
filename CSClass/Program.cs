@@ -205,6 +205,11 @@ namespace CSClass
                     ((Cat)item).Meow();
                 }
                 // item is Animal -> true
+
+                var dog = item as Dog;
+                if(dog != null) { dog.Bark(); }
+                var cat = item as Cat;
+                if (cat != null) { cat.Meow(); }
             }
         }
     }
