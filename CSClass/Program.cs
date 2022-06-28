@@ -211,6 +211,13 @@ namespace CSClass
                 var cat = item as Cat;
                 if (cat != null) { cat.Meow(); }
             }
+
+            Console.WriteLine();
+
+            Child ChildA = new Child();
+            Child ChildB = new Child("string");
+
+            Console.WriteLine();
         }
     }
 }
