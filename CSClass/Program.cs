@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSClass
 {
-    internal class Program
+    public class Program
     {
+        public static int number = 10;
+
         static void Main(string[] args)
         {
             Car car = new Car();
@@ -216,6 +218,19 @@ namespace CSClass
 
             Child ChildA = new Child();
             Child ChildB = new Child("string");
+
+            Console.WriteLine();
+
+            // Shadowing
+            int number = 20;
+            Console.WriteLine(number);
+
+            Console.WriteLine();
+
+            foreach(var item in Animals)
+            {
+                item.Eat();
+            }
 
             Console.WriteLine();
         }
